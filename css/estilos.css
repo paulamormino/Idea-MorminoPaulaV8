@@ -1,0 +1,394 @@
+/*variables colores*/
+/*variables medidas*/
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Oswald:wght@300&family=Outfit:wght@100&family=Rubik+Beastly&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+* body {
+  background-image: url(../imagenes/fondo2.png);
+  max-width: 1310px;
+  background-size: cover;
+  width: 100%;
+}
+* html {
+  scroll-behavior: smooth;
+}
+@font-face {
+  * {
+    font-family: outfit;
+    src: url(fontfamily/Outfit.ttf);
+    src: url(fontfamily/Dongle-Bold.ttf);
+    src: url(fontfamily/Dongle-Light.ttf);
+    src: url(fontfamily/Oswald-VariableFont_wght.ttf);
+  }
+}
+
+/* mapa*/
+/* Carrousel */
+.carousel-indicators {
+  width: 100%;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 500px;
+}
+
+#demo {
+  width: 100%;
+}
+
+/* Barra de navegacion */
+.navbar {
+  background-color: black !important;
+  position: fixed !important;
+  width: 100%;
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+  color: #fdfd65 !important;
+  font-family: fantasy;
+  margin-left: 1%;
+}
+
+#collapsibleNavbar {
+  margin-left: 10%;
+}
+
+.nav-link {
+  color: #fafadf !important;
+  font-family: fantasy;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-left: 100px;
+}
+
+.nav-link:hover {
+  color: rgba(255, 255, 4, 0.664) !important;
+}
+
+/* titulos de las secciones */
+#menu1 {
+  text-align: center;
+  background-color: #fdfd65;
+  color: black;
+  text-transform: uppercase;
+  font-family: fantasy;
+  font-size: 25px;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+#menu2 {
+  text-align: center;
+  background-color: yellow;
+  color: rgba(8, 8, 8, 0.692);
+  text-transform: uppercase;
+  font-family: fantasy;
+  font-size: 25px;
+  border: 1px solid black;
+}
+
+#menu3 {
+  text-align: center;
+  background-color: yellow;
+  color: rgba(8, 8, 8, 0.692);
+  text-transform: uppercase;
+  font-family: fantasy;
+  font-size: 25px;
+  border: 1px solid black;
+}
+
+#menu4 {
+  text-align: center;
+  background-color: yellow;
+  color: rgba(8, 8, 8, 0.692);
+  text-transform: uppercase;
+  font-family: fantasy;
+  font-size: 25px;
+  border: 1px solid black;
+}
+
+#menu5 {
+  color: yellow;
+  margin-left: 2%;
+}
+
+/* actividades */
+.container1 {
+  height: auto;
+  width: 25%;
+  color: yellow;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-shadow: 2px 2px 3px black;
+  text-align: center;
+}
+.container1 img {
+  height: 380px;
+  border-bottom: black 2px solid;
+}
+.container1 p {
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.container1:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+  filter: grayscale(100%);
+}
+
+.boton, .botonmas--horario, .botonmas--precio {
+  background-color: black;
+  border-bottom: black 2px solid;
+}
+.boton span, .botonmas--horario span, .botonmas--precio span {
+  color: white !important;
+  text-shadow: 2px 2px 3px black;
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.541) !important;
+}
+
+.container2 {
+  height: auto;
+  width: 25%;
+  color: yellow;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-shadow: 2px 2px 3px black;
+  text-align: center;
+}
+.container2 img {
+  height: 380px;
+  border-bottom: black 2px solid;
+}
+.container2 p {
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.container2:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+  filter: grayscale(100%);
+}
+
+.container3 {
+  height: auto;
+  width: 25%;
+  color: yellow;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-shadow: 2px 2px 3px black;
+  text-align: center;
+}
+.container3 img {
+  height: 380px;
+  border-bottom: black 2px solid;
+}
+.container3 p {
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.container3:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+  filter: grayscale(100%);
+}
+
+.container4 {
+  height: auto;
+  width: 25%;
+  color: yellow;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-shadow: 2px 2px 3px black;
+  text-align: center;
+}
+.container4 img {
+  height: 380px;
+  border-bottom: black 2px solid;
+}
+.container4 p {
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.container4:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+  filter: grayscale(100%);
+}
+
+.container-fluid {
+  height: auto;
+  margin-bottom: 1% black;
+}
+
+.container5 {
+  height: auto;
+  width: 25%;
+  color: yellow;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-shadow: 2px 2px 3px black;
+  text-align: center;
+}
+.container5 img {
+  height: 380px;
+  border-bottom: black 2px solid;
+}
+.container5 p {
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.container5:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+  filter: grayscale(100%);
+}
+
+/* merch */
+.contproducto1 {
+  width: 33%;
+  color: black;
+  text-align: center;
+  height: auto;
+  margin-left: 4%;
+  margin-right: -4%;
+  margin-bottom: 1%;
+  font-family: fantasy;
+}
+.contproducto1 img {
+  height: 380px;
+  border: black 2px solid;
+}
+.contproducto1 span {
+  text-shadow: 2px 2px 3px black;
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.541) !important;
+}
+
+.producto1 {
+  color: black;
+  display: flex;
+  text-align: center;
+}
+
+.botonmas {
+  width: 100%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  margin-left: 35%;
+  height: auto;
+}
+
+.botonmas--precio {
+  margin-left: 45%;
+}
+
+.botonmas--horario {
+  margin-left: 30%;
+}
+
+.btn {
+  color: yellow !important;
+  border: black 2px solid;
+  width: 30%;
+}
+
+.btn:hover {
+  background-color: black;
+  border: yellow 2px solid;
+}
+
+.label label {
+  background-color: black !important;
+}
+
+/* formulario de contacto */
+.contacto {
+  background-color: rgba(0, 0, 0, 0.658);
+  color: yellow !important;
+  text-shadow: 2px 2px 3px black;
+  width: 70%;
+  margin: 0%;
+  border: black 5px solid;
+  margin-left: 15%;
+}
+
+.invalid-feedback {
+  color: white !important;
+}
+
+/* footer */
+.footer1 {
+  margin: 0%;
+  color: yellow !important;
+  text-shadow: 2px 2px 3px black;
+  width: 100%;
+  border: black 5px solid;
+  background-color: black;
+  height: auto;
+}
+
+.celular a {
+  color: white;
+}
+
+/* info de contacto y mas info */
+.contacto1 {
+  width: 80%;
+  margin-left: 10%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-shadow: 1px 1px 2px black;
+  color: black;
+  text-align: center;
+  height: auto;
+}
+
+.card-text span {
+  text-transform: uppercase;
+}
+
+.card-body {
+  background-color: rgba(255, 255, 0, 0.808) !important;
+}
+
+.botoninteres {
+  text-align: center;
+  background-color: black;
+  color: yellow;
+}
+
+/* modificacion de pantalla responsive  */
+@media only screen and (max-width: 519px) {
+  .container1, .container2, .container3, .container4, .contproducto1 {
+    width: 100%;
+    height: auto;
+  }
+
+  #demo img {
+    width: 100%;
+    height: 100px;
+  }
+}
+@media only screen and (min-width: 519px) and (max-width: 800px) {
+  .container1, .container2, .container3, .container4, .contproducto1 {
+    width: 50%;
+    height: auto;
+  }
+
+  #demo img {
+    width: 100%;
+    height: 150px;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 1063px) {
+  .container1, .container2, .container3, .container4, .contproducto1 {
+    width: 33%;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

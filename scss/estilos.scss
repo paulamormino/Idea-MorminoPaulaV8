@@ -1,0 +1,395 @@
+/*variables colores*/
+$color1: black;
+$color2: yellow;
+$color3: rgb(253, 253, 101);
+$color4: rgb(250, 250, 223);
+$color5: rgba(255, 255, 4, 0.664);
+$color6: rgba(8, 8, 8, 0.692);
+$color7: white;
+$color8: rgba(255, 255, 0, 0.932);
+$color9: rgba(0, 0, 0, 0.541);
+$color10: rgba(0, 0, 0, 0.658);
+$color11: rgba(255, 255, 0, 0.808);
+/*variables medidas*/
+$medida1: 25px;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    body {
+        background-image: url(../imagenes/fondo2.png);
+        max-width: 1310px;
+        background-size: cover;
+        width: 100%;
+    }
+    html {
+        scroll-behavior: smooth; 
+    }
+    @font-face {
+        font-family: outfit;
+        src: url(fontfamily/Outfit.ttf);
+        src: url(fontfamily/Dongle-Bold.ttf);
+        src: url(fontfamily/Dongle-Light.ttf);
+        src: url(fontfamily/Oswald-VariableFont_wght.ttf);
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Oswald:wght@300&family=Outfit:wght@100&family=Rubik+Beastly&display=swap');
+
+/* mapa*/
+$fonts: (
+    "primary": fantasy,
+    "secondary": sans-serif,
+);
+
+
+
+/* Carrousel */
+.carousel-indicators {
+    width: 100%;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 500px;    
+}
+#demo {
+    width: 100%;
+}
+
+/* Barra de navegacion */
+.navbar {
+    background-color: rgb(0, 0, 0) !important;
+    position: fixed !important;
+    width: 100%;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    color: $color3 !important;
+    font-family: map-get($fonts, "primary");
+    margin-left: 1%;
+}
+#collapsibleNavbar {
+    margin-left: 10%;
+}
+
+.nav-link {
+    color: $color4 !important;
+    font-family: map-get($fonts, "primary");
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+.nav-link:hover {
+    color: $color5 !important;
+}
+
+/* titulos de las secciones */
+#menu1 {
+    text-align: center; 
+    background-color: $color3;
+    color: $color1;
+    text-transform: uppercase;
+    font-family: map-get($fonts, "primary");
+    font-size: $medida1;
+    border: 1px solid $color1;
+    padding: 5px;
+}
+
+#menu2 {
+    text-align: center; 
+    background-color: $color2;
+    color: $color6;
+    text-transform: uppercase;
+    font-family: map-get($fonts, "primary");
+    font-size: $medida1;
+    border: 1px solid $color1;
+}
+#menu3 {
+    text-align: center; 
+    background-color: $color2;
+    color: $color6;
+    text-transform: uppercase;
+    font-family: map-get($fonts, "primary");
+    font-size: $medida1;
+    border: 1px solid $color1;
+}
+
+#menu4 {
+    text-align: center; 
+    background-color: $color2;
+    color: $color6;
+    text-transform: uppercase;
+    font-family: map-get($fonts, "primary");
+    font-size: $medida1;
+    border: 1px solid $color1;
+}
+
+#menu5 {
+    color: $color2;
+    margin-left: 2%;
+}
+
+/* actividades */
+@mixin sizes($width, $height, $bcolor) {
+    height: $height;
+    width: $width;
+    color: $bcolor;
+}
+.container1 {
+    @include sizes(25%, auto, $color2);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px 2px 3px $color1;
+    text-align: center;
+    img{
+        height: 380px;
+        border-bottom: $color1 2px solid;
+    }
+    p{
+        font-size: 18px;
+        margin-top: 5%;
+    }
+}
+
+.container1:hover {
+    transform: scale(1.10);
+    transition: all 1s;
+    filter:grayscale(100%);
+}
+
+.boton {
+    background-color: $color1;
+    border-bottom: $color1 2px solid;
+    span{
+        color: $color7 !important;
+        text-shadow: 2px 2px 3px $color1;
+        font-size: 15px;
+        background-color: $color9 !important;
+    }
+}
+
+.container2 {
+    @include sizes(25%, auto, $color2);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px 2px 3px $color1;
+    text-align: center;
+    img{
+        height: 380px;
+        border-bottom: $color1 2px solid;
+    }
+    p{
+        font-size: 18px;
+        margin-top: 5%;
+    }
+}
+
+.container2:hover {
+    transform: scale(1.10);
+    transition: all 1s;
+    filter:grayscale(100%);
+}
+
+.container3 {
+    @include sizes(25%, auto, $color2);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px 2px 3px $color1;
+    text-align: center;
+    img{
+        height: 380px;
+        border-bottom: $color1 2px solid;
+    }
+    p{
+        font-size: 18px;
+        margin-top: 5%;
+    }
+}
+
+.container3:hover {
+    transform: scale(1.10);
+    transition: all 1s;
+    filter:grayscale(100%);
+}
+.container4 {
+    @include sizes(25%, auto, $color2);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+    text-shadow: 2px 2px 3px $color1;
+    text-align: center;
+    img{
+        height: 380px;
+        border-bottom: $color1 2px solid;
+    }
+    p{
+        font-size: 18px;
+        margin-top: 5%;
+    }
+}
+
+.container4:hover {
+    transform: scale(1.10);
+    transition: all 1s;
+    filter:grayscale(100%);
+}
+
+.container-fluid {
+    height: auto;
+    margin-bottom: 1% $color1;
+}
+
+.container5 {
+    @include sizes(25%, auto, $color2);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px 2px 3px $color1;
+    text-align: center;
+    img {
+        height: 380px;
+        border-bottom: $color1 2px solid;
+    }
+    p {
+        font-size: 18px;
+        margin-top: 5%;
+    }
+}
+
+.container5:hover {
+    transform: scale(1.10);
+    transition: all 1s;
+    filter: grayscale(100%);
+}
+/* merch */
+.contproducto1 {
+    width: 33%;
+    color: $color1;
+    text-align: center;
+    height: auto;
+    margin-left: 4%;
+    margin-right: -4%;
+    margin-bottom: 1%;
+    font-family: map-get($fonts, "primary");
+    img {
+        height: 380px;
+        border: $color1 2px solid;
+    }
+    span {
+        text-shadow: 2px 2px 3px $color1;
+        font-size: 15px;
+        background-color: $color9 !important;
+    }
+}
+
+.producto1 {
+    color: $color1;
+    display: flex;
+    text-align: center;   
+}
+
+.botonmas {
+    width: 100%;
+    margin-top: 2%; 
+    margin-bottom: 1%;
+    margin-left: 35%;
+    height: auto;
+}
+.botonmas--precio{
+    @extend .boton;
+    margin-left: 45%
+     
+}
+.botonmas--horario{
+    @extend .boton;
+    margin-left: 30%; 
+}
+.btn {
+    color: $color2 !important;
+    border: $color1 2px solid;
+    width: 30%;
+}
+.btn:hover {
+    background-color: $color1;
+    border: $color2 2px solid;
+}
+.label label {
+    background-color: $color1 !important;
+}
+
+/* formulario de contacto */
+.contacto {
+    background-color: $color10;
+    color: $color2 !important;
+    text-shadow: 2px 2px 3px $color1;
+    width: 70%;
+    margin: 0%;
+    border: $color1 5px solid;
+    margin-left: 15%;
+}
+.invalid-feedback {
+    color: $color7 !important;
+}
+/* footer */
+.footer1 {
+    margin: 0%;
+    color: $color2 !important;
+    text-shadow: 2px 2px 3px $color1;
+    width: 100%;
+    border: $color1 5px solid;
+    background-color: $color1;
+    height: auto;
+}
+
+.celular a {
+    color: $color7;
+}
+
+/* info de contacto y mas info */
+.contacto1 {
+    width: 80%;
+    margin-left: 10%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 1px 1px 2px $color1;
+    color: $color1;
+    text-align: center;
+    height: auto;
+}
+
+.card-text span {
+    text-transform: uppercase;
+}
+
+.card-body {
+    background-color: $color11 !important;
+}
+.botoninteres {
+    text-align: center;
+    background-color: $color1;
+    color: $color2;
+}
+
+/* modificacion de pantalla responsive  */
+@media only screen and (max-width: 519px){
+    .container1, .container2, .container3, .container4, .contproducto1{
+        width: 100%;
+        height: auto;
+    }
+    #demo img{
+        width: 100%;
+        height: 100px;
+    }
+}
+@media only screen and (min-width: 519px) and (max-width:800px){
+    .container1, .container2, .container3, .container4, .contproducto1{
+        width: 50%;
+        height: auto;
+    }
+    
+    #demo img{
+        width: 100%;
+        height: 150px;
+    }
+}
+@media only screen and (min-width: 800px) and (max-width:1063px){
+    .container1, .container2, .container3, .container4, .contproducto1{
+        width: 33%;
+        height: auto;
+    }
+}
